@@ -15,7 +15,7 @@ default_args = {
 with DAG(DAG_ID, default_args = default_args, schedule_interval="30 10 * * *",tags=["prd"]) as dag:
     test = BashOperator(
         task_id='hello_airflow_k8s',
-        bash_command='echo "Hello Airflow!!!!"',
+        bash_command='echo "Hello Airflow Again!!!!"',
         retries=3
         )
     
